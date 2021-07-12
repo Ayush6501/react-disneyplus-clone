@@ -16,27 +16,27 @@ const ImgSlider = () => {
     return (
         <Carousel {...settings}>
             <Wrap>
-                <a>
+                <a href="">
                     <img src="/images/slider-loki.jpg" alt=""/>
                 </a>
             </Wrap>
             <Wrap>
-                <a>
+                <a href="">
                     <img src="/images/sliding-mando.jpg" alt=""/>
                 </a>
             </Wrap>
             <Wrap>
-                <a>
+                <a href="">
                     <img src="/images/slider-badag.jpg" alt=""/>
                 </a>
             </Wrap>
             <Wrap>
-                <a>
+                <a href="">
                     <img src="/images/slider-scales.jpg" alt=""/>
                 </a>
             </Wrap>
             <Wrap>
-                <a>
+                <a href="">
                     <img src="/images/slider-scale.jpg" alt=""/>
                 </a>
             </Wrap>

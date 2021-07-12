@@ -1,16 +1,25 @@
 import styled from "styled-components";
 import {Link} from "react-router-dom";
+import {useSelector} from "react-redux";
+import {selectNew} from "../feature/movie/movieSlice";
 
 const NewDisney = () => {
+    const movies = useSelector(selectNew);
+
     return (
         <Container>
             <h4>New to Disney+</h4>
             <Content>
-                <Wrap>
-                    <Link to ="/">
-                        <img src="" alt=""/>
-                    </Link>
-                </Wrap>
+                {
+                    movies && movies.map((movie, key) => (
+                        <Wrap key={key}>
+                            {movie.id}
+                            <Link to={'/detail/' + movie.id}>
+                                <img src={movie.cardImg} alt={movie.title}/>
+                            </Link>
+                        </Wrap>
+                    ))
+                }
             </Content>
         </Container>
     );
